@@ -9,7 +9,7 @@
     <li>Supports two modes:
       <ul>
         <li><strong>BBOX mode</strong> — search by longitude/latitude bounding box.</li>
-        <li><strong>Sequence mode</strong> — download all images from a sequence key (set <code>SEQUENCE_KEY</code>).</li>
+        <li><strong>Sequence mode (THIS DOESN'T WORK)</strong> — download all images from a sequence key (set <code>SEQUENCE_KEY</code>).</li>
       </ul>
     </li>
     <li>Saves:
