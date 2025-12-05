@@ -69,19 +69,4 @@ OUT_DIR = "mapillary_images"</code></pre>
     </ul>
   </div>
 
-  <h2>License</h2>
-  <p>Include a license in your repository as needed. Example: <span class="kbd">MIT License</span>.</p>
-
-  <h2>Optional</h2>
-  <p>Want me to add any of the following for the GitHub repo?</p>
-  <ul>
-    <li><code>requirements.txt</code></li>
-    <li>Example <code>mapillary_images_metadata.csv</code> preview</li>
-    <li>A simple CLI wrapper or README badges</li>
-  </ul>
-
-  <div class="footer">
-    <p>Generated for your GitHub repository — copy this HTML into <code>README.html</code> or include it in your repo docs.</p>
-  </div>
-</body>
-</html>
+ 
