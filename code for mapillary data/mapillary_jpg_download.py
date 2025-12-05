@@ -1,6 +1,5 @@
 # mapillary_download_360_with_sequence_filter.py
 # Requires: requests, pandas, tqdm
-# pip install requests pandas tqdm
 
 import os
 import csv
@@ -14,20 +13,18 @@ import urllib.parse as up
 # ---------------- USER CONFIG ----------------
 ACCESS_TOKEN = "MLY|25984759771124636|f4bba18fac5061e39514c35a5fb9b318"  
 # If you want to download all images in a specific sequence, set SEQUENCE_KEY to that key (string).
-# Otherwise set SEQUENCE_KEY = None and the script will use the BBOX search.
+# Otherwise set SEQUENCE_KEY = None and the script will only use the BBOX search.
 SEQUENCE_KEY = None  # e.g. "s-ABCD1234..." or None
 
 # bbox = lon_min, lat_min, lon_max, lat_max
-BBOX = (-102.4486111, 44.0658333, -102.4422222, 44.0725000)  # (replace with your bbox)
+BBOX = (-102.4486111, 44.0658333, -102.4422222, 44.0725000) 
 OUT_DIR = "mapillary_images"
 CSV_PATH = os.path.join(OUT_DIR, "mapillary_images_metadata.csv")
 
 # API base
 BASE_URL = "https://graph.mapillary.com"
 
-# A reasonably broad set of image fields (Mapillary requires explicit fields).
-# We include common EXIF and computed fields; the code will also capture any other
-# keys present in the returned JSON (stored as raw_json).
+# We include common EXIF and computed fields; the code will also capture any other keys present in the returned JSON (stored as raw_json).
 FIELDS = ",".join([
     "id",
     "key",
